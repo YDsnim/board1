@@ -28,7 +28,7 @@ public class BoardController {
 		log.info("list url 요청..");
 		model.addAttribute("list", service.getList(cri)); //글목록
 		model.addAttribute("pageMaker", new PageDTO(cri, service.count(cri)));    //페이지바 정보
-		model.addAttribute("thisTime",service.getList();//현재시간 출력
+		model.addAttribute("thisTime",service.thistime());//현재시간 출력
 		// -> board/list.jsp
 	}
 	
