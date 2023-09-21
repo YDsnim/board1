@@ -9,7 +9,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header"><i class="fa fa-list-ul"></i> 게시판   지금시간: ${serverTime}.</h1>
+                    <h1 class="page-header"><i class="fa fa-list-ul"></i> 게시판   지금시간: ${service.thistime()}.</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
