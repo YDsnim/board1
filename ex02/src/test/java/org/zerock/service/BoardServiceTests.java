@@ -59,7 +59,10 @@ public class BoardServiceTests {
 		service.good(2687010L);
 	}
 	
-	
+	@Test
+	public void nowTimeT() {
+		log.info("지금시간은 :" +service.thistime() );
+	}
 	
 	
 }
