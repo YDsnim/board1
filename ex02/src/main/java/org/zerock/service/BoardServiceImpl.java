@@ -78,7 +78,7 @@ public class BoardServiceImpl implements BoardService {
 		String thisTime = now.toString();
 		System.out.println(thisTime);
 		// TODO Auto-generated method stub
-		return null;
+		return mapper.thistime();
 	}
 
 	

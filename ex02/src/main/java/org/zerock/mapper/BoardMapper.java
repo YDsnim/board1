@@ -1,8 +1,8 @@
 package org.zerock.mapper;
 
+import java.util.Date;
 import java.util.List;
 
-import org.apache.ibatis.annotations.Select;
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.HourVO;
@@ -49,7 +49,8 @@ public interface BoardMapper {
 	//좋아요 
 	void good(Long bno);
 	
-	
+	//현재시간
+	Date thistime();
 	//게시글 페이지 처리 (뒤에)
 	
 	//게시글 검색 (뒤에)
