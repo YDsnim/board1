@@ -70,6 +70,17 @@ public class BoardServiceImpl implements BoardService {
 		
 	}
 
+	@Override
+	public Date thistime() {
+		
+		Date now = new Date();
+		
+		String thisTime = now.toString();
+		System.out.println(thisTime);
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 	
 	
