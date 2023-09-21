@@ -7,3 +7,6 @@ public class RankVO {
 	private String writer;
 	private Integer count;
 }
+public class nowTime{
+	
+}
