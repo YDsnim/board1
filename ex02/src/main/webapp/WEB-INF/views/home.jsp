@@ -12,9 +12,7 @@
 </h1>
 
 <P>  서버시간: ${serverTime}. </P>
-커밋 전후 테스트      
 
-커밋 전후 테스트 22222
-<a href="/board/list">게시판 목록으로</a>
+<a href="board/list">게시판 목록으로</a>
 </body>
 </html>
