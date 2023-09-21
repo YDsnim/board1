@@ -3,6 +3,7 @@ package org.zerock.service;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.jdbc.core.BatchUpdateUtils;
 import org.springframework.stereotype.Service;
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
@@ -75,10 +76,8 @@ public class BoardServiceImpl implements BoardService {
 		
 		Date now = new Date();
 		
-		String thisTime = now.toString();
-		System.out.println(thisTime);
 		// TODO Auto-generated method stub
-		return mapper.thistime();
+		return now;
 	}
 
 	

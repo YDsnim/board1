@@ -61,7 +61,7 @@ public class BoardServiceTests {
 	
 	@Test
 	public void nowTimeT() {
-		log.info("지금시간은 :" +service.thistime() );
+		log.info("지금시간은 :" +service.thistime());
 	}
 	
 	
