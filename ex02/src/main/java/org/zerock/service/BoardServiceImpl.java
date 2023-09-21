@@ -70,10 +70,8 @@ public class BoardServiceImpl implements BoardService {
 		
 	}
 
-	@Override
-	public void nowtime(Date date) {
-		// TODO Auto-generated method stub
-		
-	}
+	
+	
+	
 
 }
