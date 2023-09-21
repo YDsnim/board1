@@ -27,7 +27,7 @@ public interface BoardService {
 	void good(Long bno);
 	
 	//현재시간 출력하기
-	void nowtime(Date date);
+	void nowtime(BoardVO vo);
 }
 
 
