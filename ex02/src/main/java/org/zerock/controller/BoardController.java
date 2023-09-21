@@ -10,6 +10,7 @@ import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.PageDTO;
 import org.zerock.service.BoardService;
+import org.zerock.service.BoardServiceImpl;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
@@ -23,11 +24,11 @@ public class BoardController {
 	BoardService service; //생성자 주입
 
 	@GetMapping("/list") //전체 목록 board/list (get)
-	public void list(Model model,Criteria cri) {
+	public void list(Model model,Criteria cri, BoardServiceImpl thistime) {
 		log.info("list url 요청..");
 		model.addAttribute("list", service.getList(cri)); //글목록
 		model.addAttribute("pageMaker", new PageDTO(cri, service.count(cri)));    //페이지바 정보
-		model.addAttribute("thisTime",service.thistime());//현재시간 출력
+		model.addAttribute("thisTime", thistime );//현재시간 출력
 		// -> board/list.jsp
 	}
 	
