@@ -1,5 +1,6 @@
 package org.zerock.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -66,6 +67,12 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public void good(Long bno) {
 		mapper.good(bno);
+		
+	}
+
+	@Override
+	public void nowtime(Date date) {
+		// TODO Auto-generated method stub
 		
 	}
 

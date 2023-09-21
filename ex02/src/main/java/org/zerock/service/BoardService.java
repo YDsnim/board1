@@ -1,5 +1,6 @@
 package org.zerock.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.zerock.domain.BoardVO;
@@ -24,6 +25,9 @@ public interface BoardService {
 	
 	//좋아요 올리기
 	void good(Long bno);
+	
+	//현재시간 출력하기
+	void nowtime(Date date);
 }
 
 
